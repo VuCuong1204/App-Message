@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/user_add"
+        android:id="@+id/profile_image"/>
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginLeft="5dp"
+        android:text="Vũ Cường"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnBochan"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_button"
+        android:text="Bỏ chặn"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

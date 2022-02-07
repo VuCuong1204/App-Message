@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Doi_mkActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/Appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/MenuStyle"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_below="@id/Appbarlayout"
+        android:text="Thay đổi mật khẩu mới"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Matkhaucu"
+        android:layout_below="@id/text1"
+        android:text="Mật khẩu cũ"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/Matkhaucu"
+        android:hint="Nhập mật khẩu cũ"
+        android:id="@+id/edtMatkhaucu"
+        android:background="@drawable/background_button"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Matkhaumoi"
+        android:layout_below="@id/edtMatkhaucu"
+        android:text="Mật khẩu mới"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/Matkhaumoi"
+        android:hint="Nhập mật khẩu mới gồm 6 chữ số"
+        android:id="@+id/edtMatkhaumoi"
+        android:background="@drawable/background_button"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Matkhauxn"
+        android:layout_below="@id/edtMatkhaumoi"
+        android:text="Xác nhận mật khẩu"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/Matkhauxn"
+        android:hint="Nhập lại mật khẩu mới"
+        android:id="@+id/edtMatkhauxn"
+        android:background="@drawable/background_button"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnXacnhan"
+        android:layout_below="@id/edtMatkhauxn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_button"
+        android:textColor="#F80303"
+        android:textStyle="bold"
+        android:text="Xác nhận"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_below="@id/btnXacnhan"
+        android:text="Thay đổi tài khoản email mới"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Taikhoancu"
+        android:layout_below="@id/text2"
+        android:text="Tài khoản email cũ"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/Taikhoancu"
+        android:hint="Nhập email mới"
+        android:id="@+id/edtTaikhoancu"
+        android:background="@drawable/background_button"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Taikhoanmoi"
+        android:layout_below="@id/edtTaikhoancu"
+        android:text="Tài khoản email mới"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/Taikhoanmoi"
+        android:hint="Nhập email mới"
+        android:id="@+id/edtTaikhoanmoi"
+        android:background="@drawable/background_button"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Taikhoanxn"
+        android:layout_below="@id/edtTaikhoanmoi"
+        android:text="Xác nhận tài khoản email mới"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/Taikhoanxn"
+        android:hint="Nhập lại tài khoản mới"
+        android:id="@+id/edtTaikhoanxn"
+        android:background="@drawable/background_button"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnXacnhan1"
+        android:layout_below="@id/edtTaikhoanxn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button"
+        android:textColor="#F80303"
+        android:textStyle="bold"
+        android:text="Xác nhận"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_below="@id/btnXacnhan1"
+        android:text="Thay đổi tên người dùng"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_below="@id/text3"
+        android:text="Tên người dùng mới"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_below="@id/Username"
+        android:hint="Nhập tên người dùng mới"
+        android:id="@+id/edtUsername"
+        android:background="@drawable/background_button"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnXacnhan2"
+        android:layout_below="@id/edtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button"
+        android:textColor="#F80303"
+        android:textStyle="bold"
+        android:text="Xác nhận"/>
+ </RelativeLayout>
+</ScrollView>

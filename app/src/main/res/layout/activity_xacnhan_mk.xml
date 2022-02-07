@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Xacnhan_mk_Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/Appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/MenuStyle"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/Appbarlayout"
+        android:id="@+id/Xacnhanmk"
+        android:text="Xác nhận mật khẩu tài khoản"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/edtMatkhauxn"
+        android:hint="Nhập mật khẩu tại đây"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:background="@drawable/background_button"
+        android:layout_below="@id/Xacnhanmk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:background="@drawable/background_button"
+        android:id="@+id/btnXacnhan"
+        android:layout_below="@id/edtMatkhauxn"
+        android:textColor="#F60606"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Xác nhận"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

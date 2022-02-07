@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/user_add"
+                android:background="@drawable/background_vienadd"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:layout_below="@id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:id="@+id/username"
+                android:textSize="22dp"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:orientation="vertical"
+        android:layout_below="@id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Chỉnh sửa thông tin cá nhân"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/imgchinhsuathongtin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgchinhsuathongtin"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:src="@drawable/profilegioitinh"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        <TextView
+            android:layout_toRightOf="@id/image"
+            android:id="@+id/Gioitinh"
+            android:text="Giới tính"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@id/image"
+            android:layout_below="@id/Gioitinh"
+            android:id="@+id/txtGioitinh"
+            android:visibility="gone"
+            android:textSize="15dp"
+            android:text="Nam"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:id="@+id/relativelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:src="@drawable/profilengaysinh"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        <TextView
+            android:layout_toRightOf="@id/image1"
+            android:id="@+id/Namsinh"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="Năm sinh"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@id/image1"
+            android:layout_below="@id/Namsinh"
+            android:id="@+id/txtNamsinh"
+            android:textSize="15dp"
+            android:text="12/4/2001"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:src="@drawable/profilediachi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        <TextView
+            android:layout_toRightOf="@id/image2"
+            android:id="@+id/Diachi"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="Địa chỉ"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_toRightOf="@id/image2"
+            android:layout_below="@id/Diachi"
+            android:id="@+id/txtDiachi"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Nam Định"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+            <RelativeLayout
+
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:src="@drawable/profilethongtin"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_toRightOf="@id/image3"
+            android:id="@+id/Gioithieu"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Giới thiệu bản thân"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_toRightOf="@id/image3"
+            android:layout_below="@+id/Gioithieu"
+            android:text="Thích bơi lội"
+            android:id="@+id/txtGioithieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txtDoimk"
+            android:text="Cài đặt"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:text="Đăng xuất"
+        android:background="@drawable/background_button"
+        android:id="@+id/btnDangxuat"
+        android:textColor="#FA0303"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_below="@id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

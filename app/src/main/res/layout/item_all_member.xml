@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:src="@drawable/user_add"
+        android:background="@drawable/background_vienadd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/textviewName"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginLeft="5dp"
+        android:text="Vũ Quốc Cường"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textviewCV"
+        android:layout_toRightOf="@id/profile_image"
+        android:text="Thành viên"
+        android:textSize="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#94000000"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Activity.MessengersActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/Appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/MenuStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:focusableInTouchMode="true"
+                android:layout_height="40dp"
+                android:src="@drawable/user_add"
+                android:background="@drawable/background_vienadd"
+                android:id="@+id/profile_image"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:civ_border_width="10dp"
+                    app:civ_border_color="#4CAF50"
+                    android:id="@+id/img_on"
+                    android:background="@drawable/background_hdon"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:layout_below="@id/username"
+                    android:layout_toEndOf="@id/profile_image"
+                    android:layout_marginTop="3dp"
+                   android:visibility="gone"
+                    android:layout_marginLeft="-17dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:civ_border_width="2dp"
+                    android:id="@+id/img_off"
+                    app:civ_border_color="#79000000"
+                    android:background="@drawable/backgroundvienhd"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:layout_below="@id/username"
+                    android:layout_toEndOf="@id/profile_image"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="-17dp"/>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Vũ Cường"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/profile_image"/>
+
+                <TextView
+                    android:text="Đang hoạt động"
+                    android:id="@+id/txtHoatdong"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:layout_below="@id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sRefresh"
+        android:layout_above="@id/linearlayout"
+        android:layout_below="@id/Appbarlayout"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/txtChan"
+        android:visibility="gone"
+        android:textSize="10dp"
+        android:textStyle="bold|italic"
+        android:text="Người dùng hiện tại đã bị chặn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="20"
+        android:orientation="horizontal">
+
+        <EditText
+            android:padding="5dp"
+            android:id="@+id/text_send"
+            android:hint="Nhập tin nhắn ..."
+            android:maxWidth="300dp"
+            android:inputType="textMultiLine|textCapSentences"
+            android:background="@drawable/background_button"
+            android:layout_width="0dp"
+            android:layout_weight="18"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_send"
+            android:background="@drawable/sendmessage"
+            android:layout_weight="2"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

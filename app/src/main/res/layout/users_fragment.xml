@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Lời mời kết bạn"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:id="@+id/textviewLoimoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewLoimoi"
+        android:layout_below="@id/textviewLoimoi"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_below="@id/recyclerviewLoimoi"
+        android:layout_width="match_parent"
+        android:text="Danh sách bạn bè"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewBanbe"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/textviewBanbe"
+        android:id="@+id/recyclerviewUser"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txtXoaChan"
+        android:textSize="20dp"
+        android:textColor="#F40909"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/recyclerviewUser"
+        android:layout_width="wrap_content"
+        android:text="Danh sách chặn bạn bè"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

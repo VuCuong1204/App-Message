@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroud_membergroup"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/user_add"
+        android:id="@+id/profile_image"
+        android:background="@drawable/background_vienadd"
+        android:layout_marginTop="10dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"/>
+
+
+    <TextView
+        android:layout_below="@id/profile_image"
+        android:id="@+id/textviewName"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/textviewName"
+        android:id="@+id/linearlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:padding="10dp"
+        android:background="@drawable/background_vientron"
+        android:id="@+id/imgNhantin"
+        android:src="@drawable/messenger"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/nhantin"
+            android:layout_below="@id/imgNhantin"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Nhắn tin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+        android:background="@drawable/background_vientron"
+        android:padding="10dp"
+        android:id="@+id/imgKetban"
+        android:src="@drawable/user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/imgKetban"
+        android:id="@+id/ketban"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:text="kết bạn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Thongtin"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Thông tin giới thiệu"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/linearlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:orientation="vertical"
+        android:layout_below="@id/Thongtin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:src="@drawable/profilegioitinh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_toRightOf="@id/image"
+            android:id="@+id/Gioitinh"
+            android:text="Giới tính"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@id/image"
+            android:layout_below="@id/Gioitinh"
+            android:id="@+id/txtGioitinh"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:src="@drawable/profilengaysinh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_toRightOf="@id/image1"
+            android:id="@+id/Namsinh"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:text="Năm sinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@id/image1"
+            android:layout_below="@id/Namsinh"
+            android:id="@+id/txtNamsinh"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:src="@drawable/profilediachi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_toRightOf="@id/image2"
+            android:id="@+id/Diachi"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="Địa chỉ"
+            android:textColor="@color/purple_500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@id/image2"
+            android:layout_below="@id/Diachi"
+            android:id="@+id/txtDiachi"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:src="@drawable/profilethongtin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_toRightOf="@id/image3"
+            android:id="@+id/Gioithieu"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:text="Giới thiệu bản thân"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@id/image3"
+            android:layout_below="@+id/Gioithieu"
+            android:visibility="gone"
+            android:id="@+id/txtGioithieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/linearlayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Chức năng"
+        android:id="@+id/chucnang"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+       android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/chucnang"
+        android:layout_width="wrap_content"
+        android:text="Chỉ định làm thành viên"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:id="@+id/ChucvuTV"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_below="@+id/ChucvuTV"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:text="Chỉ định làm quản trị viên"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:id="@+id/Chucvu"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+       android:visibility="gone"
+        android:id="@+id/iconchucvu"
+        android:layout_below="@id/chucnang"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/iconadd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <ImageView
+       android:visibility="gone"
+        android:id="@+id/iconXoaTV"
+        android:layout_below="@id/iconchucvu"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/Xoathanhvien"
+        android:text="Xóa thành viên ra khỏi nhóm"
+        android:layout_below="@id/Chucvu"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#F60909"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

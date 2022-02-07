@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_white_corner_16"
+    android:layout_margin="16dp"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/doitennhom"
+        android:hint="Đổi tên tại đây"
+        android:background="@drawable/bg_white_corner_16"/>
+    <Button
+        android:layout_below="@id/doitennhom"
+        android:layout_width="wrap_content"
+        android:background="@drawable/background_tablayout"
+        android:layout_marginTop="10dp"
+        android:text="Đồng ý"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttondongy"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
